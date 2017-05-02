@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Counter example</title>
+    <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="${counter}"></p>
-<a th:href="@{counter(counter=${counter},operation='inc')}">increase</a>
-<a th:href="@{counter(counter=${counter},operation='dec')}">decrease</a>
-<a th:href="@{counter(counter=${counter},operation='zero')}">zero</a>
+<p th:text="${counter.value}"></p>
+<a th:href="@{szamlalo(operation='inc')}">noveles</a>
+<a th:href="@{szamlalo(operation='dec')}">csokkentes</a>
+<a th:href="@{szamlalo(operation='zero')}">nullaz</a>
 
 </body>
 </html>
