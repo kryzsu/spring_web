@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Counter example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="${counter}"></p>
+<a th:href="@{counter(counter=${counter},operation='inc')}">increase</a>
+<a th:href="@{counter(counter=${counter},operation='dec')}">decrease</a>
+<a th:href="@{counter(counter=${counter},operation='zero')}">zero</a>
+
+</body>
+</html>
